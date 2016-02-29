@@ -1,0 +1,73 @@
+#div1{
+	width:420px;
+	height:318px;
+	padding:10px;
+	border:1px solid #aaaaaa;
+}
+#body{
+	margin:0px 0px 0px 0px;
+	background-color: #DDEEFF;
+}
+#person1, #centre{
+	text-align: center;
+}
+#myCanvas{
+	border:1px solid #c3c3c3;
+	background-color: #FFFFFF;
+}
+#iMap{
+	background-color: #FFDDFF;
+}
+#table, td, th{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+.section{
+	padding-left: 50px;
+	border:2px dashed black;
+}
+
+.headerFooter {
+
+	background-color: grey;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	color:black !important;
+	
+}
+#table.font{
+	font-family: Times;
+	font-size: 15px;
+	background-color: #DF1D1E;
+}
+#mapPara.font{
+background-color: #DF9D9E;
+	font-family: Times;
+	font-size: 18px;
+}
+nav a{
+	padding-left: 10px;
+	padding-right: 10px;
+	color:black;
+	text-decoration: none;
+}
+
+h4 a{
+	color:black;
+	
+}
+
+dl{
+	margin: auto;
+}
+
+ul  {
+	list-style-type: circle;	
+	display: inline;
+	padding:inherit;
+	 
+}
+
+.fontColor{
+	color: #005A31 !important;
+}

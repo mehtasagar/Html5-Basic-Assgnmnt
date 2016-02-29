@@ -1,0 +1,24 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+</style>
+
+</head>
+<body>
+
+<p id="welcome"></p>
+
+<script>
+
+if (typeof(Storage) !== "undefined") {
+
+    // Retrieve
+    document.getElementById("welcome").innerHTML = "Hi Again " +localStorage.getItem("lastname") + "!";
+} else {
+    document.getElementById("welcome").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+</body>
+</html>

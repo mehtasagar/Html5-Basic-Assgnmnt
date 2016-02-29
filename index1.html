@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="application-name" content="First WPL HW"/>
+		<meta name="keywords" content="Homework, WPL, Assignment"/>
+		<meta name="author" content="Sagar Mehta"/>
+		<meta name="description" content="This is the first practical assignment."/>
+		<title>My First HW</title>
+		<link rel="stylesheet" type="text/css" href="myCss.css"/>
+
+	</head>
+
+	<body id ="body">
+		<header class="headerFooter">
+			<nav>
+				<a href="#api">Location & Drag-Drop</a> |
+				<a href="#form" > Form </a>  |
+				<a href="#iMap">Image Map</a>  |
+				<a href="#a2">Question 2</a> 
+			</nav>
+		</header>
+
+		<h2 class="font" id="person1"> Welcome! </h2>
+		<section class="section">
+			<h4 class="font"> List of things covered in this Assignment</h4>
+			<ol>
+				<li>Meta Tags</li>	
+				<li>Semantic Tags </li>
+				<li><dl>
+						<dt>Lists</dt>
+						<dd><ul>
+								 <li>Ordered Lists </li><li> Unordered Lists</li><li> Description Lists</li>
+							</ul>
+						</dd>
+					</dl>
+				</li>	
+				<li><dl>	
+						<dt>Form Elements</dt>
+						<dd>Text Area, CheckBox, Radio Buttons, Reset Button, HTML Input elements like color, date-time, range, Time, number,password
+						</dd>
+					</dl>
+				</li>
+				<li><dl>		
+						<dt>JAVASCRIPT API</dt>
+						<dd>
+							<ul>
+								<li>Geolocation </li><li> Drag and drop </li><li>Storage </li>
+							</ul>
+						</dd>
+
+					</dl>
+				</li>
+			</ol>
+			
+
+			<h4 class="font">Here's the <a href ="http://cs.utdallas.edu" target="_blank">link to Utdallas CS Department</a></h4>
+
+
+			<h4 class="font">Check Out <a  href="test.html" target="_blank">Storage Functionality </a> You will find the name in new tab / Window.</h4>
+		<br/>
+		</section>
+		<br/>
+		<section id="api" class="section">
+				<h4 class="font">API</h4>	
+
+				<p class="font" id="demo">Click the button to get your coordinates:</p>
+
+				<button onclick="getLocation()">Try It</button>
+				 
+
+				 <p>Drag the India Flag image into the rectangle:</p>
+
+				<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				
+				<img id="drag1" src="India.png" draggable="true" ondragstart="drag(event)" width="420" height="318" alt="Indian Flag" />
+
+		</section>
+
+		<br/>
+		
+
+		<section class="section" id="form">
+			<h4 class="font">About You!</h4>
+			<form >
+			<table id ="table" class="font" >
+				<tr>
+					<td>
+						<label>Name:</label>
+					</td>
+					<td>
+						<input id="name" type="text" onblur="blurFunction()" placeholder="Full Name" maxlength="20"/>
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Favorite Color:</label>
+					</td>
+					<td>
+						<input type="color"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Gender:</label>
+					</td>
+					<td>
+						<input type="radio" name="gender" value="Male"/>Male
+						<input type="radio" name="gender" value="Female"/>Female
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Description</label>
+					</td>
+					<td>
+						<textarea placeholder="Tell me about ur hobbies.." maxlength="100"></textarea>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>DOB:</label><br/>
+						Date Before: 2050-12-31
+					</td>
+					<td>
+						<input type="date" name="bday" max="2050-12-31"/><br/>				
+				
+  					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Food:</label>
+					</td>
+					<td>
+						<input type="checkbox" name="Food" value="veg"/> Veggie
+  						<input type="checkbox" name="Food" value="non-veg"/> Non-Veggie  
+  						<input type="checkbox" name="Food" value="both"/> Both  				
+				
+  					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Select Contact Time:</label>
+					</td>
+					<td>
+						<input type="range" id="timed" min=0 max=23 oninput="x.value=parseInt(timed.value)" /><output name="x" for="timed"></output>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Height in cms::</label>
+					</td>
+					<td>
+						<input type="number" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>username::</label>
+					</td>
+					<td>
+						<input type="text" maxlength="20"/>	
+					</td>
+				</tr><tr>
+					<td>
+						<label>Password::</label>
+					</td>
+					<td>
+						<input type="password" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 <input type="submit" value="Submit"/>
+					</td>
+				
+					<td>
+						<button type="reset" value="reset">Reset</button> 
+					</td>
+				</tr>
+			</table>
+		 </form>
+		</section>
+			<br/>
+		<section class="section"	 id= "iMap">
+			<h4 class="font"> Image Map</h4>
+
+			<p id="mapPara" class="font">Click on the Different Flag Color to explore more about it:</p>
+
+			<img src="India.png" width="40%" height="50%" alt="India" usemap="#IndiaMap"/>
+
+			<map name="IndiaMap">
+		  		<area shape="rect" coords="0,0,530,120" alt="saffron" target="_blank" href="http://en.wikipedia.org/wiki/Saffron_(color)#Deep_saffron"/>
+		    	<area shape="rect" coords="0,120,220,240" alt="White" target="_blank" href="http://en.wikipedia.org/wiki/White"/>
+		 		 <area shape="circle" coords="268,180,50" alt="ashok chakra"  target="_blank" href="http://en.wikipedia.org/wiki/Ashoka_Chakra"/>
+
+		      	<area shape="rect" coords="315,120,530,240" alt="white" target="_blank" href="http://en.wikipedia.org/wiki/White"/>
+		    	<area shape="rect" coords="0,240,530,360" alt="green" target="_blank" href="http://en.wikipedia.org/wiki/Shades_of_green#India_green"/>
+
+			</map>
+
+		</section>
+
+
+		<section id="a2">
+						<h4 class="font"> Question 2</h4>
+
+			<canvas id="myCanvas" width="1800" height="500" ></canvas>
+		</section>
+
+
+		<footer class="headerFooter">
+
+			<p id="centre">Sagar Mehta (sam150930)</p>
+		</footer>
+
+
+		<script src="myScript.js"></script>
+	</body>
+</html>
